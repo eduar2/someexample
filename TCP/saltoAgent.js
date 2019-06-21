@@ -9,6 +9,7 @@ const port = 3103
 const host = '192.168.122.220'
 const ddb = new AWS.DynamoDB({ apiCVersion: "2012-8-10"});
 
+
 var xmlOptions = {
     declaration: {
         encoding: "ISO-8859-1"
@@ -83,21 +84,22 @@ function processResponse() {
 }
 
 function sendtoDataBase(){
-    AWS.config.update({ process.env.REGION })
-    var mysqlConnection = mysql.createConnection({
+    AWS.config.update({ region: process.env.REGION })
+    var con = mysql.createConnection({
         host: process.env.MYSQL_HOST,
         user: process.env.MYSQL_USER,
         password: process.env.MYSQL_PASSWORD
     });
 
-    var mysqlConnection.connect(function(err){
+    con.connect(function(err){
         if (err)
             console.error(err)
         console.log("MySQL connected")    
-        mysqlConnection.query("select * from master.room", function(err,result,fields){
-            if(err) 
-                console.error(err)
-            console.info(result)
-        })
+
+        // mysqlConnection.query("select * from master.room", function(err,result,fields){
+        //     if(err) 
+        //         console.error(err)
+        //     console.info(result)
+        // })
     })
 }
