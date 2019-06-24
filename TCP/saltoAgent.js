@@ -11,7 +11,7 @@ dotenv.config()
 const port = 3103
 const host = '192.168.122.220'
 
-AWS.config.update({ region: process.env.MYSQL_HOST})
+AWS.config.update({ region: process.env.REGION})
 
 const ddb = new AWS.DynamoDB({ apiCVersion: "2012-8-10"});
 
@@ -37,12 +37,12 @@ const client = new net.Socket();
 let auditResponse = ''
 
 client.connect(port, host, async function () {
-    console.log("Salto Serever connection established")
-    let data = fs.readFileSync('./TCP/inputData.json') 
-    let inputParameters = JSON.parse(data)
+    console.log("Salto Server connection established")
+    //let data = fs.readFileSync('./TCP/inputData.json') 
+    //let inputParameters = JSON.parse(data)
     actualCursor = await getActualCursor();
-    console.log("Actual Cursor: " + actualCursor)
-    let startId = parseInt(inputParameters.startId, 10) + 1
+    //let startId = parseInt(inputParameters.startId, 10) + 1
+    let startId = parseInt(actualCursor, 10) + 1
     sendXML.Params["StartingFromEventID"] = startId
 
     let xml = js2xmlparser.parse("RequestCall", sendXML, xmlOptions);
@@ -76,11 +76,10 @@ const  getActualCursor = async () => {
       var params = {
         TableName: "dev_corserva_saltoCursor",
         Key: {
-            serverName: { S: "SaltoDn" }
+            serverName: { S: "SaltoDb" }
           },
         ProjectionExpression: "actualCursor"
       };
-  
       const response = await ddb.getItem(params).promise();
       return (
         (response &&
@@ -95,6 +94,23 @@ const  getActualCursor = async () => {
     }
   };
 
+  const updateCursor = async (actualCursor) => {
+    console.log("updating cursor...");
+    try {
+      var params = {
+        TableName: "dev_corserva_saltoCursor",
+        Item: {
+            serverName: { S: "SaltoDb" },
+            actualCursor: {S: actualCursor}
+          }
+      };
+      return await ddb.putItem(params).promise();
+    } catch (e) {
+      console.error(e);
+      return errorResponse(e.message);
+    }
+  };  
+
 async function processResponse() {
     var parser = new xml2js.Parser();
     let xmlResult = auditResponse.substring(auditResponse.indexOf('RequestResponse') - 1)
@@ -102,11 +118,11 @@ async function processResponse() {
         let resultParams = result.RequestResponse.Params[0]
         let resultAuditTrail = resultParams.SaltoDBAuditTrail[0]
         let resultEvents = resultAuditTrail.SaltoDBAuditTrailEvent
-        let maxId = resultEvents[resultEvents.length - 1].EventID.toString()
-        let obj = {
-            "startId": maxId
-        }
-        fs.writeFileSync('./TCP/inputData.json', JSON.stringify(obj)) //reading from parent directory
+        // let maxId = resultEvents[resultEvents.length - 1].EventID.toString()
+        // let obj = {
+        //     "startId": maxId
+        // }
+        // fs.writeFileSync('./TCP/inputData.json', JSON.stringify(obj)) //reading from parent directory
         alertDoorIds = resultEvents.map(event => {
             return event.DoorID[0]
         })
@@ -124,11 +140,6 @@ async function sendtoDataBase(idDoors, saltoAlerts){
         password: process.env.MYSQL_PASSWORD
     });
 
-    // var con = await mysql.createConnection({
-    //     host: 'localhost',
-    //     user: 'root',
-    //     password: 'password'
-    // });
     idDoors.push("Amazon Echo Kellie")
     con.connect(function(err){
         if (err){
@@ -147,8 +158,8 @@ async function sendtoDataBase(idDoors, saltoAlerts){
             relatedDevices = JSON.parse(JSON.stringify(relatedDevices))
             if (relatedDevices.length>0){
                 await Promise.all(relatedDevices.map(async device =>{
-                    let alerts = saltoAlerts.filter(alert => alert.DoorID[0] == device.name)
-                    //let alerts = await Promise.all(saltoAlerts.filter(async alert => alert.DoorID[0] == 'ORL-2nd Fl Front Door'))
+                    //let alerts = saltoAlerts.filter(alert => alert.DoorID[0] == device.name)
+                    let alerts = await Promise.all(saltoAlerts.filter(async alert => alert.DoorID[0] == 'ORL-2nd Fl Front Door'))
                     if (alerts.length > 0){
                         await Promise.all(alerts.map(async alert=>{
                             try {
@@ -157,7 +168,7 @@ async function sendtoDataBase(idDoors, saltoAlerts){
                                     TableName: "Alert",
                                     Item: {
                                         id: { S: nanoId },
-                                        severityStatusDate: {S: "INFO#PENDING#" + alert.EventDateTime[0].toString()},
+                                        severityStatusDate: {S: "INFO#NOTSOLVED#" + alert.EventDateTime[0].toString()},
                                         tenantId: {S: device.tenantId},
                                         tenantName: {S: device.tenantName},
                                         propertyId: {S: device.propertyId},
@@ -174,7 +185,7 @@ async function sendtoDataBase(idDoors, saltoAlerts){
                                         networkGatewayName: {S: device.networkGatewayName},
                                         iotGatewayId: {S: device.iotGatewayId},
                                         iotGatewayName: {S: device.iotGatewayName},
-                                        status: {S: "PENDING"},
+                                        status: {S: "NOT SOLVED"},
                                         severity: {S: "INFO"},
                                         description: {S: alert.Operation[0]},
                                         code: {S: alert.EventID[0]},
@@ -194,6 +205,8 @@ async function sendtoDataBase(idDoors, saltoAlerts){
                     }
                 }))
             }
+            let maxId = saltoAlerts[saltoAlerts.length - 1].EventID.toString()
+            updateCursor(maxId)
             con.destroy()
             console.log("Mysql connection closed")
         })
