@@ -158,8 +158,8 @@ async function sendtoDataBase(idDoors, saltoAlerts){
             relatedDevices = JSON.parse(JSON.stringify(relatedDevices))
             if (relatedDevices.length>0){
                 await Promise.all(relatedDevices.map(async device =>{
-                    //let alerts = saltoAlerts.filter(alert => alert.DoorID[0] == device.name)
-                    let alerts = await Promise.all(saltoAlerts.filter(async alert => alert.DoorID[0] == 'ORL-2nd Fl Front Door'))
+                    let alerts = saltoAlerts.filter(alert => alert.DoorID[0] == device.name)
+                    //let alerts = await Promise.all(saltoAlerts.filter(async alert => alert.DoorID[0] == 'ORL-2nd Fl Front Door'))
                     if (alerts.length > 0){
                         await Promise.all(alerts.map(async alert=>{
                             try {

@@ -13,9 +13,10 @@ var xmlOptions = {
 }
 
 var sendXML = {
-    "RequestName": "SaltoDBDoorList.Read",
+    "RequestName": "Dataset.GetRows",
     "Params": {
-        "MaxCount": 100
+        "DBEntityName": "Dataset_Full_Audit_Trail",
+        "MaxRows": 100
     }
 }
 
@@ -27,10 +28,11 @@ let auditResponse = ''
 
 client.connect(port, host, async function () {
     console.log("connection established")
-    // let data = fs.readFileSync('./TCP/inputData.json') //reading from parent directory
-    // let inputParameters = JSON.parse(data)
-    // let startId = parseInt(inputParameters.startId, 10) + 1
-    // sendXML.Params["StartingFromEventID"] = startId
+    
+    let data = fs.readFileSync('./TCP/inputData.json') //reading from parent directory
+    let inputParameters = JSON.parse(data)
+    let startId = parseInt(inputParameters.startId, 10) + 1
+    //sendXML.Params["StartingFromEventID"] = startId
 
     let xml = js2xmlparser.parse("RequestCall", sendXML, xmlOptions);
     let xmlLength = xml.length
@@ -61,7 +63,9 @@ function processResponse() {
     let xmlResult = auditResponse.substring(auditResponse.indexOf('RequestResponse') - 1)
     parser.parseString(xmlResult, function (err, result) {
         let resultParams = result.RequestResponse.Params[0]
-        let listDoors = resultParams.SaltoDBDoorList[0].SaltoDBDoor
+        let listAlerts = resultParams.RowList[0].Row
+        console.log(listAlerts)
+        console.log(listAlerts.length)
         // let resultAuditTrail = resultParams.SaltoDBAuditTrail[0]
         // let resultEvents = resultAuditTrail.SaltoDBAuditTrailEvent
         // let maxId = resultEvents[resultEvents.length - 1].EventID.toString()
@@ -69,9 +73,15 @@ function processResponse() {
         //     "startId": maxId
         // }
         // fs.writeFileSync('./TCP/inputData.json', JSON.stringify(obj)) //reading from parent directory
-        fs.writeFileSync('./TCP/resultado.json', JSON.stringify(listDoors)) //reading from parent directory
-        
-        console.log(listDoors)
-        console.log(listDoors.length)
+        // console.log(resultEvents[0])
+        // console.log(resultEvents[resultEvents.length - 1])
+        // console.log("max Id found: " + maxId)
     })
 }
+
+
+// var parser = new xml2js.Parser();
+//     let xmlResult = auditResponse.substring(auditResponse.indexOf('RequestResponse') - 1)
+//     parser.parseString(xmlResult, function (err, result) {
+//         let resultParams = result.RequestResponse.Params[0]
+//         let listDoors = resultParams.RowList[0].Row

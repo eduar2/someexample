@@ -1,1 +1,8 @@
-TCP/node_modules
+TCP/node_modules/
+node_modules
+TCP/.vscode/settings.json
+TCP/yarn.lock
+
+package.json
+yarn.lock
+TCP/package.json
