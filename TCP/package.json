@@ -1,7 +1,9 @@
 {
   "dependencies": {
+    "aws-sdk": "^2.480.0",
     "global": "^4.4.0",
     "js2xmlparser": "^4.0.0",
+    "mysql": "^2.17.1",
     "net": "^1.0.2",
     "pm2": "^3.5.1",
     "tcp-client": "^1.1.9",

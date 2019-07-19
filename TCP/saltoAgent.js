@@ -1,11 +1,12 @@
 const net = require('net')
 const xml2js = require('xml2js')
 const js2xmlparser = require('js2xmlparser');
-const fs = require('fs');
 const AWS = require('aws-sdk');
 const mysql = require('mysql');
 const nanoid = require('nanoid');
 const dotenv = require('dotenv');
+const path = require('path'); 
+
 dotenv.config()
 
 const port = 3103
@@ -15,6 +16,7 @@ AWS.config.update({ region: process.env.REGION})
 
 const ddb = new AWS.DynamoDB({ apiCVersion: "2012-8-10"});
 
+require('dotenv').config({ path: path.join(__dirname, '.env') });
 
 var xmlOptions = {
     declaration: {
@@ -33,7 +35,6 @@ var sendXML = {
 
 const client = new net.Socket();
 
-
 let auditResponse = ''
 
 client.connect(port, host, async function () {
@@ -44,7 +45,6 @@ client.connect(port, host, async function () {
     //let startId = parseInt(inputParameters.startId, 10) + 1
     let startId = parseInt(actualCursor, 10) + 1
     sendXML.Params["StartingFromEventID"] = startId
-
     let xml = js2xmlparser.parse("RequestCall", sendXML, xmlOptions);
     let xmlLength = xml.length
     let stp = 'STP/00/' + xmlLength + '/' + xml.toString()
@@ -122,7 +122,7 @@ async function processResponse() {
         // let obj = {
         //     "startId": maxId
         // }
-        // fs.writeFileSync('./TCP/inputData.json', JSON.stringify(obj)) //reading from parent directory
+        // fs.writeFileSync('./TCP/inputData.json', JSON.stringify(obj)) 
         alertDoorIds = resultEvents.map(event => {
             return event.DoorID[0]
         })
@@ -131,84 +131,93 @@ async function processResponse() {
     
 }
 
-
-async function sendtoDataBase(idDoors, saltoAlerts){
-    
-    var con = await mysql.createConnection({
-        host: process.env.MYSQL_HOST,
-        user: process.env.MYSQL_USER,
-        password: process.env.MYSQL_PASSWORD
-    });
-
-    idDoors.push("Amazon Echo Kellie")
-    con.connect(function(err){
-        if (err){
-            console.error(err)
-        }
-        console.log("MySQL connected")    
-        let query = "select * from master.device where name in (?)"
-        let queryData = [idDoors]
-        con.query(query,queryData,async function(err,relatedDevices){
-            if (err){
-                console.error(err)
+async function sendtoDataBase(saltoAlerts) {
+    if (saltoAlerts.length > 0) {
+        await Promise.all(saltoAlerts.map(async alert => {
+            try {
+                let nanoId = nanoid()
+                const params = {
+                    TableName: "Alert",
+                    Item: {
+                        id: { S: nanoId },
+                        deviceName: { S: alert.DoorID[0] },
+                        deviceId: { S: alert.DoorID[0] },
+                        severityStatusDate: { S: "INFO#NOTSOLVED#" + alert.EventDateTime[0].toString() },
+                        status: { S: "NOT SOLVED"},
+                        severity: { S: "INFO" },
+                        description: { S: alert.Operation[0] },
+                        code: { S: alert.EventID[0] },
+                    }
+                };
+                return await ddb.putItem(params).promise();
+            } catch (e) {
+                console.error(e);
                 con.destroy()
                 console.log("Mysql connection closed")
+                return errorResponse(e.statusCode, e.message);
             }
-            
-            relatedDevices = JSON.parse(JSON.stringify(relatedDevices))
-            if (relatedDevices.length>0){
-                await Promise.all(relatedDevices.map(async device =>{
-                    let alerts = saltoAlerts.filter(alert => alert.DoorID[0] == device.name)
-                    //let alerts = await Promise.all(saltoAlerts.filter(async alert => alert.DoorID[0] == 'ORL-2nd Fl Front Door'))
-                    if (alerts.length > 0){
-                        await Promise.all(alerts.map(async alert=>{
-                            try {
-                                let nanoId = nanoid()
-                                const params = {
-                                    TableName: "Alert",
-                                    Item: {
-                                        id: { S: nanoId },
-                                        severityStatusDate: {S: "INFO#NOTSOLVED#" + alert.EventDateTime[0].toString()},
-                                        tenantId: {S: device.tenantId},
-                                        tenantName: {S: device.tenantName},
-                                        propertyId: {S: device.propertyId},
-                                        propertyName: {S: device.propertyName},
-                                        buildingId: {S: device.buildingId},
-                                        buildingName: {S: device.buildingName},
-                                        floorId: {S: device.floorId},
-                                        floorName: {S: device.floorName},
-                                        roomId: {S: device.roomId},
-                                        roomName: {S: device.roomName},
-                                        deviceId: {S: device.id},
-                                        deviceName: {S: device.name},
-                                        networkGatewayId: {S: device.networkGatewayId},
-                                        networkGatewayName: {S: device.networkGatewayName},
-                                        iotGatewayId: {S: device.iotGatewayId},
-                                        iotGatewayName: {S: device.iotGatewayName},
-                                        status: {S: "NOT SOLVED"},
-                                        severity: {S: "INFO"},
-                                        description: {S: alert.Operation[0]},
-                                        code: {S: alert.EventID[0]},
-                                        macAddress: {S: device.macAddress},
-                                        serialNumber: {S: device.serialNumber},
-                                        model: {S: device.model}
-                                    }
-                                };
-                                return await ddb.putItem(params).promise();
-                            } catch (e) {
-                                console.error(e);
-                                con.destroy()
-                                console.log("Mysql connection closed")
-                                return errorResponse(e.statusCode, e.message);
-                            }
-                        }))
-                    }
-                }))
-            }
-            let maxId = saltoAlerts[saltoAlerts.length - 1].EventID.toString()
-            updateCursor(maxId)
-            con.destroy()
-            console.log("Mysql connection closed")
-        })
-    })
+        }))
+    }
+    let maxId = saltoAlerts[saltoAlerts.length - 1].EventID.toString()
+    updateCursor(maxId)
 }
+
+// async function sendtoDataBase(idDoors, saltoAlerts){
+//     var con = await mysql.createConnection({
+//         host: process.env.MYSQL_HOST,
+//         user: process.env.MYSQL_USER,
+//         password: process.env.MYSQL_PASSWORD,
+//         database: process.env.MYSQL_DATABASE
+//     });
+//     //idDoors.push("Amazon Echo Kellie")
+//     con.connect(function(err){
+//         if (err){
+//             console.error(err)
+//         }
+//         console.log("MySQL connected")    
+//         let query = "select * from master.device where name in (?)"
+//         let queryData = [idDoors]
+//         con.query(query,queryData,async function(err,relatedDevices){
+//             if (err){
+//                 console.error(err)
+//                 con.destroy()
+//                 console.log("Mysql connection closed")
+//             }
+//             relatedDevices = JSON.parse(JSON.stringify(relatedDevices))
+//             if (relatedDevices.length>0){
+//                 await Promise.all(relatedDevices.map(async device =>{
+//                     let alerts = saltoAlerts.filter(alert => alert.DoorID[0] == device.name)
+//                     //let alerts = await Promise.all(saltoAlerts.filter(async alert => alert.DoorID[0] == 'ORL-2nd Fl Front Door'))
+//                     if (alerts.length > 0){
+//                         await Promise.all(alerts.map(async alert=>{
+//                             try {
+//                                 let nanoId = nanoid()
+//                                 const params = {
+//                                     TableName: "Alert",
+//                                     Item: {
+//                                         id: { S: nanoId },
+//                                         severityStatusDate: {S: "INFO#NOTSOLVED#" + alert.EventDateTime[0].toString()},
+//                                         deviceId: {S: device.id},
+//                                         deviceName: {S: device.name},
+//                                         status: {S: "NOT SOLVED"},
+//                                         severity: {S: "INFO"},
+//                                         description: {S: alert.Operation[0]},
+//                                         code: {S: alert.EventID[0]},
+//                                     }
+//                                 };
+//                                 return await ddb.putItem(params).promise();
+//                             } catch (e) {
+//                                 console.error(e);
+//                                 return errorResponse(e.statusCode, e.message);
+//                             }
+//                         }))
+//                     }
+//                 }))
+//             }
+//             let maxId = saltoAlerts[saltoAlerts.length - 1].EventID.toString()
+//             updateCursor(maxId)
+//             con.destroy()
+//             console.log("Mysql connection closed")
+//         })
+//     })
+// }

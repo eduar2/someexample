@@ -17,6 +17,8 @@ var sendXML = {
     "Params": {
         "MaxCount": 10,
         "DescendingOrder": 0,
+        "ShowDoorIDAs": 1,
+        "ShowUserIDAs": 1,
         "StartingFromEventID": null
     }
 }
@@ -29,6 +31,7 @@ let auditResponse = ''
 
 client.connect(port, host, async function () {
     console.log("connection established")
+    
     let data = fs.readFileSync('./TCP/inputData.json') //reading from parent directory
     let inputParameters = JSON.parse(data)
     let startId = parseInt(inputParameters.startId, 10) + 1

@@ -1,0 +1,2152 @@
+[
+    {
+      "ExtDoorID": [
+        "0E2FCFDF6AC3E8CB5E0008D4FF4F5032"
+      ],
+      "Name": [
+        "ORL-2nd Flr Ldy Rm"
+      ],
+      "Description": [
+        "ORL-2nd Floor Ldy Rm"
+      ],
+      "GPF1": [
+        ""
+      ],
+      "GPF2": [
+        ""
+      ],
+      "OpenTime": [
+        "6"
+      ],
+      "OpenTimeADA": [
+        "20"
+      ],
+      "OpeningMode": [
+        "2"
+      ],
+      "TimedPeriodsTableID": [
+        "2"
+      ],
+      "AutomaticChangesTableID": [
+        "1"
+      ],
+      "KeypadCode": [
+        "0000"
+      ],
+      "AuditOnKeys": [
+        "0"
+      ],
+      "AntipassbackEnabled": [
+        "0"
+      ],
+      "OutwardAntipassback": [
+        "0"
+      ],
+      "UpdateRequired": [
+        "1"
+      ],
+      "BatteryStatus": [
+        "80"
+      ]
+    },
+    {
+      "ExtDoorID": [
+        "0F70AFF4E7F34BC4808008D4E9767F7A"
+      ],
+      "Name": [
+        "ORL-117-Warehouse Ramp"
+      ],
+      "Description": [
+        "ORL-117-Warehouse Ramp "
+      ],
+      "GPF1": [
+        ""
+      ],
+      "GPF2": [
+        ""
+      ],
+      "OpenTime": [
+        "6"
+      ],
+      "OpenTimeADA": [
+        "20"
+      ],
+      "OpeningMode": [
+        "0"
+      ],
+      "TimedPeriodsTableID": [
+        "1"
+      ],
+      "AutomaticChangesTableID": [
+        "1"
+      ],
+      "KeypadCode": [
+        "0000"
+      ],
+      "AuditOnKeys": [
+        "0"
+      ],
+      "AntipassbackEnabled": [
+        "0"
+      ],
+      "OutwardAntipassback": [
+        "0"
+      ],
+      "UpdateRequired": [
+        "1"
+      ],
+      "BatteryStatus": [
+        "80"
+      ]
+    },
+    {
+      "ExtDoorID": [
+        "15B27B2DBA0351C2470008D4506092E6"
+      ],
+      "Name": [
+        "ORL-2nd Fl-Electrical Rm"
+      ],
+      "Description": [
+        "ORL-2nd Fl-Electrical, Network, Access Control"
+      ],
+      "GPF1": [
+        ""
+      ],
+      "GPF2": [
+        ""
+      ],
+      "OpenTime": [
+        "6"
+      ],
+      "OpenTimeADA": [
+        "20"
+      ],
+      "OpeningMode": [
+        "0"
+      ],
+      "TimedPeriodsTableID": [
+        "1"
+      ],
+      "AutomaticChangesTableID": [
+        "1"
+      ],
+      "KeypadCode": [
+        "0000"
+      ],
+      "AuditOnKeys": [
+        "0"
+      ],
+      "AntipassbackEnabled": [
+        "0"
+      ],
+      "OutwardAntipassback": [
+        "0"
+      ],
+      "UpdateRequired": [
+        "1"
+      ],
+      "BatteryStatus": [
+        "80"
+      ]
+    },
+    {
+      "ExtDoorID": [
+        "179052EB69A9F5C8B08008D4D40704CB"
+      ],
+      "Name": [
+        "ORL-140-Hall to Corserva"
+      ],
+      "Description": [
+        "ORL-140-Hall to Corserva Offices"
+      ],
+      "GPF1": [
+        ""
+      ],
+      "GPF2": [
+        ""
+      ],
+      "OpenTime": [
+        "6"
+      ],
+      "OpenTimeADA": [
+        "20"
+      ],
+      "OpeningMode": [
+        "0"
+      ],
+      "TimedPeriodsTableID": [
+        "1"
+      ],
+      "AutomaticChangesTableID": [
+        "1"
+      ],
+      "KeypadCode": [
+        "0000"
+      ],
+      "AuditOnKeys": [
+        "1"
+      ],
+      "AntipassbackEnabled": [
+        "0"
+      ],
+      "OutwardAntipassback": [
+        "0"
+      ],
+      "UpdateRequired": [
+        "1"
+      ],
+      "BatteryStatus": [
+        "80"
+      ]
+    },
+    {
+      "ExtDoorID": [
+        "2289CE81061BF4C2A00008D47C36C101"
+      ],
+      "Name": [
+        "ORL-180-Cncpt Ctr Rear"
+      ],
+      "Description": [
+        "ORL-180-Cncpt Ctr Rear Exit Door to Stairwell"
+      ],
+      "GPF1": [
+        ""
+      ],
+      "GPF2": [
+        ""
+      ],
+      "OpenTime": [
+        "6"
+      ],
+      "OpenTimeADA": [
+        "20"
+      ],
+      "OpeningMode": [
+        "0"
+      ],
+      "TimedPeriodsTableID": [
+        "1"
+      ],
+      "AutomaticChangesTableID": [
+        "1"
+      ],
+      "KeypadCode": [
+        "0000"
+      ],
+      "AuditOnKeys": [
+        "1"
+      ],
+      "AntipassbackEnabled": [
+        "0"
+      ],
+      "OutwardAntipassback": [
+        "0"
+      ],
+      "UpdateRequired": [
+        "1"
+      ],
+      "BatteryStatus": [
+        "80"
+      ]
+    },
+    {
+      "ExtDoorID": [
+        "2C42BF65966C00C1C78008D5B4FCC1D6"
+      ],
+      "Name": [
+        "ORL-2nd Floor Back Door"
+      ],
+      "Description": [
+        "2nd Floor Back Door"
+      ],
+      "GPF1": [
+        ""
+      ],
+      "GPF2": [
+        ""
+      ],
+      "OpenTime": [
+        "6"
+      ],
+      "OpenTimeADA": [
+        "20"
+      ],
+      "OpeningMode": [
+        "0"
+      ],
+      "TimedPeriodsTableID": [
+        "1"
+      ],
+      "AutomaticChangesTableID": [
+        "1"
+      ],
+      "KeypadCode": [
+        "0000"
+      ],
+      "AuditOnKeys": [
+        "0"
+      ],
+      "AntipassbackEnabled": [
+        "0"
+      ],
+      "OutwardAntipassback": [
+        "0"
+      ],
+      "UpdateRequired": [
+        "1"
+      ],
+      "BatteryStatus": [
+        "100"
+      ]
+    },
+    {
+      "ExtDoorID": [
+        "2CB220F9DFA450C7B90008D45058926B"
+      ],
+      "Name": [
+        "ORL-2nd Fl-DD-Mezzanine"
+      ],
+      "Description": [
+        "ORL-2nd Fl-DD-Mezzanine"
+      ],
+      "GPF1": [
+        ""
+      ],
+      "GPF2": [
+        ""
+      ],
+      "OpenTime": [
+        "6"
+      ],
+      "OpenTimeADA": [
+        "20"
+      ],
+      "OpeningMode": [
+        "0"
+      ],
+      "TimedPeriodsTableID": [
+        "1"
+      ],
+      "AutomaticChangesTableID": [
+        "1"
+      ],
+      "KeypadCode": [
+        "0000"
+      ],
+      "AuditOnKeys": [
+        "1"
+      ],
+      "AntipassbackEnabled": [
+        "0"
+      ],
+      "OutwardAntipassback": [
+        "0"
+      ],
+      "UpdateRequired": [
+        "1"
+      ],
+      "BatteryStatus": [
+        "80"
+      ]
+    },
+    {
+      "ExtDoorID": [
+        "33BA9E69769922C1450008D47DF95103"
+      ],
+      "Name": [
+        "ORL-180-Cncpt Ctr Clst"
+      ],
+      "Description": [
+        "ORL-180-Concept Ctr Closet"
+      ],
+      "GPF1": [
+        ""
+      ],
+      "GPF2": [
+        ""
+      ],
+      "OpenTime": [
+        "6"
+      ],
+      "OpenTimeADA": [
+        "20"
+      ],
+      "OpeningMode": [
+        "0"
+      ],
+      "TimedPeriodsTableID": [
+        "1"
+      ],
+      "AutomaticChangesTableID": [
+        "1"
+      ],
+      "KeypadCode": [
+        "0000"
+      ],
+      "AuditOnKeys": [
+        "1"
+      ],
+      "AntipassbackEnabled": [
+        "0"
+      ],
+      "OutwardAntipassback": [
+        "0"
+      ],
+      "UpdateRequired": [
+        "1"
+      ],
+      "BatteryStatus": [
+        "80"
+      ]
+    },
+    {
+      "ExtDoorID": [
+        "3A04CA8D616361C3990008D4D4076177"
+      ],
+      "Name": [
+        "ORL-102-Kitchen-Hallway"
+      ],
+      "Description": [
+        "ORL-102-Kitchen-Hallway"
+      ],
+      "GPF1": [
+        ""
+      ],
+      "GPF2": [
+        ""
+      ],
+      "OpenTime": [
+        "6"
+      ],
+      "OpenTimeADA": [
+        "20"
+      ],
+      "OpeningMode": [
+        "0"
+      ],
+      "TimedPeriodsTableID": [
+        "1"
+      ],
+      "AutomaticChangesTableID": [
+        "1"
+      ],
+      "KeypadCode": [
+        "0000"
+      ],
+      "AuditOnKeys": [
+        "1"
+      ],
+      "AntipassbackEnabled": [
+        "0"
+      ],
+      "OutwardAntipassback": [
+        "0"
+      ],
+      "UpdateRequired": [
+        "1"
+      ],
+      "BatteryStatus": [
+        "80"
+      ]
+    },
+    {
+      "ExtDoorID": [
+        "3B4F010BE8DBC0C6740008D4FAC16FD6"
+      ],
+      "Name": [
+        "ORL-UPS-ROOM2"
+      ],
+      "Description": [
+        "ORL-UPS-ROOM2"
+      ],
+      "GPF1": [
+        ""
+      ],
+      "GPF2": [
+        ""
+      ],
+      "OpenTime": [
+        "6"
+      ],
+      "OpenTimeADA": [
+        "20"
+      ],
+      "OpeningMode": [
+        "0"
+      ],
+      "TimedPeriodsTableID": [
+        "1"
+      ],
+      "AutomaticChangesTableID": [
+        "1"
+      ],
+      "KeypadCode": [
+        "0000"
+      ],
+      "AuditOnKeys": [
+        "1"
+      ],
+      "AntipassbackEnabled": [
+        "0"
+      ],
+      "OutwardAntipassback": [
+        "0"
+      ],
+      "UpdateRequired": [
+        "1"
+      ],
+      "BatteryStatus": [
+        "80"
+      ]
+    },
+    {
+      "ExtDoorID": [
+        "3F586C778A25E5C5108008D4FAB2008D"
+      ],
+      "Name": [
+        "ORL-UPS-ROOM"
+      ],
+      "Description": [
+        "ORL-UPS-ROOM"
+      ],
+      "GPF1": [
+        ""
+      ],
+      "GPF2": [
+        ""
+      ],
+      "OpenTime": [
+        "6"
+      ],
+      "OpenTimeADA": [
+        "20"
+      ],
+      "OpeningMode": [
+        "0"
+      ],
+      "TimedPeriodsTableID": [
+        "1"
+      ],
+      "AutomaticChangesTableID": [
+        "1"
+      ],
+      "KeypadCode": [
+        "0000"
+      ],
+      "AuditOnKeys": [
+        "1"
+      ],
+      "AntipassbackEnabled": [
+        "0"
+      ],
+      "OutwardAntipassback": [
+        "0"
+      ],
+      "UpdateRequired": [
+        "1"
+      ],
+      "BatteryStatus": [
+        "80"
+      ]
+    },
+    {
+      "ExtDoorID": [
+        "4094E23173944ACA9D8008D4E49FC0F0"
+      ],
+      "Name": [
+        "ORL-179C-RF to Hallway"
+      ],
+      "Description": [
+        "ORL-179C RF-to Hallway"
+      ],
+      "GPF1": [
+        ""
+      ],
+      "GPF2": [
+        ""
+      ],
+      "OpenTime": [
+        "6"
+      ],
+      "OpenTimeADA": [
+        "20"
+      ],
+      "OpeningMode": [
+        "0"
+      ],
+      "TimedPeriodsTableID": [
+        "1"
+      ],
+      "AutomaticChangesTableID": [
+        "1"
+      ],
+      "KeypadCode": [
+        "0000"
+      ],
+      "AuditOnKeys": [
+        "1"
+      ],
+      "AntipassbackEnabled": [
+        "0"
+      ],
+      "OutwardAntipassback": [
+        "0"
+      ],
+      "UpdateRequired": [
+        "1"
+      ],
+      "BatteryStatus": [
+        "80"
+      ]
+    },
+    {
+      "ExtDoorID": [
+        "4617643CD2C253C8EB8008D4D4074F7E"
+      ],
+      "Name": [
+        "ORL-101-Conf Rm-Hallway"
+      ],
+      "Description": [
+        "ORL-101-Conf Rm-Hallway"
+      ],
+      "GPF1": [
+        ""
+      ],
+      "GPF2": [
+        ""
+      ],
+      "OpenTime": [
+        "6"
+      ],
+      "OpenTimeADA": [
+        "20"
+      ],
+      "OpeningMode": [
+        "0"
+      ],
+      "TimedPeriodsTableID": [
+        "1"
+      ],
+      "AutomaticChangesTableID": [
+        "1"
+      ],
+      "KeypadCode": [
+        "0000"
+      ],
+      "AuditOnKeys": [
+        "1"
+      ],
+      "AntipassbackEnabled": [
+        "0"
+      ],
+      "OutwardAntipassback": [
+        "0"
+      ],
+      "UpdateRequired": [
+        "1"
+      ],
+      "BatteryStatus": [
+        "80"
+      ]
+    },
+    {
+      "ExtDoorID": [
+        "518B43E37F629AC9E28008D4D8C2716E"
+      ],
+      "Name": [
+        "ORL-117 Fire Command Rm"
+      ],
+      "Description": [
+        "ORL-117 Fire Command Rm"
+      ],
+      "GPF1": [
+        ""
+      ],
+      "GPF2": [
+        ""
+      ],
+      "OpenTime": [
+        "6"
+      ],
+      "OpenTimeADA": [
+        "20"
+      ],
+      "OpeningMode": [
+        "0"
+      ],
+      "TimedPeriodsTableID": [
+        "1"
+      ],
+      "AutomaticChangesTableID": [
+        "1"
+      ],
+      "KeypadCode": [
+        "0000"
+      ],
+      "AuditOnKeys": [
+        "1"
+      ],
+      "AntipassbackEnabled": [
+        "0"
+      ],
+      "OutwardAntipassback": [
+        "0"
+      ],
+      "UpdateRequired": [
+        "1"
+      ],
+      "BatteryStatus": [
+        "80"
+      ]
+    },
+    {
+      "ExtDoorID": [
+        "526C552C6EB84FCEA38008D4D5CAC4AA"
+      ],
+      "Name": [
+        "ORL-166_RF to DC"
+      ],
+      "Description": [
+        "ORL-166_RF to DC"
+      ],
+      "GPF1": [
+        ""
+      ],
+      "GPF2": [
+        ""
+      ],
+      "OpenTime": [
+        "6"
+      ],
+      "OpenTimeADA": [
+        "20"
+      ],
+      "OpeningMode": [
+        "0"
+      ],
+      "TimedPeriodsTableID": [
+        "1"
+      ],
+      "AutomaticChangesTableID": [
+        "1"
+      ],
+      "KeypadCode": [
+        "0000"
+      ],
+      "AuditOnKeys": [
+        "1"
+      ],
+      "AntipassbackEnabled": [
+        "0"
+      ],
+      "OutwardAntipassback": [
+        "0"
+      ],
+      "UpdateRequired": [
+        "1"
+      ],
+      "BatteryStatus": [
+        "80"
+      ]
+    },
+    {
+      "ExtDoorID": [
+        "57E2CD0161C7AAC42B8008D4D5CB508F"
+      ],
+      "Name": [
+        "ORL-180-Cncpt Ctr M Door"
+      ],
+      "Description": [
+        "ORL-180-Cncpt Ctr M Door"
+      ],
+      "GPF1": [
+        ""
+      ],
+      "GPF2": [
+        ""
+      ],
+      "OpenTime": [
+        "6"
+      ],
+      "OpenTimeADA": [
+        "20"
+      ],
+      "OpeningMode": [
+        "0"
+      ],
+      "TimedPeriodsTableID": [
+        "1"
+      ],
+      "AutomaticChangesTableID": [
+        "1"
+      ],
+      "KeypadCode": [
+        "0000"
+      ],
+      "AuditOnKeys": [
+        "1"
+      ],
+      "AntipassbackEnabled": [
+        "0"
+      ],
+      "OutwardAntipassback": [
+        "0"
+      ],
+      "UpdateRequired": [
+        "1"
+      ],
+      "BatteryStatus": [
+        "80"
+      ]
+    },
+    {
+      "ExtDoorID": [
+        "5B804011B7F677CB750008D531B1ACE6"
+      ],
+      "Name": [
+        "Demo Block Lock"
+      ],
+      "Description": [
+        ""
+      ],
+      "GPF1": [
+        ""
+      ],
+      "GPF2": [
+        ""
+      ],
+      "OpenTime": [
+        "6"
+      ],
+      "OpenTimeADA": [
+        "20"
+      ],
+      "OpeningMode": [
+        "0"
+      ],
+      "TimedPeriodsTableID": [
+        "1"
+      ],
+      "AutomaticChangesTableID": [
+        "1"
+      ],
+      "KeypadCode": [
+        "0000"
+      ],
+      "AuditOnKeys": [
+        "1"
+      ],
+      "AntipassbackEnabled": [
+        "0"
+      ],
+      "OutwardAntipassback": [
+        "0"
+      ],
+      "UpdateRequired": [
+        "1"
+      ],
+      "BatteryStatus": [
+        "80"
+      ]
+    },
+    {
+      "ExtDoorID": [
+        "5BDB6DA13300E7C1360008D5B4FCAED5"
+      ],
+      "Name": [
+        "ORL-2nd Floor Front Door"
+      ],
+      "Description": [
+        "2nd Floor Front Door"
+      ],
+      "GPF1": [
+        ""
+      ],
+      "GPF2": [
+        ""
+      ],
+      "OpenTime": [
+        "6"
+      ],
+      "OpenTimeADA": [
+        "20"
+      ],
+      "OpeningMode": [
+        "0"
+      ],
+      "TimedPeriodsTableID": [
+        "1"
+      ],
+      "AutomaticChangesTableID": [
+        "1"
+      ],
+      "KeypadCode": [
+        "0000"
+      ],
+      "AuditOnKeys": [
+        "0"
+      ],
+      "AntipassbackEnabled": [
+        "0"
+      ],
+      "OutwardAntipassback": [
+        "0"
+      ],
+      "UpdateRequired": [
+        "1"
+      ],
+      "BatteryStatus": [
+        "100"
+      ]
+    },
+    {
+      "ExtDoorID": [
+        "64DBA6E515ADB7C99D8008D4D406D48C"
+      ],
+      "Name": [
+        "ORL-157-NOC to DC"
+      ],
+      "Description": [
+        "ORL-157-NOC to DC"
+      ],
+      "GPF1": [
+        ""
+      ],
+      "GPF2": [
+        ""
+      ],
+      "OpenTime": [
+        "6"
+      ],
+      "OpenTimeADA": [
+        "20"
+      ],
+      "OpeningMode": [
+        "0"
+      ],
+      "TimedPeriodsTableID": [
+        "1"
+      ],
+      "AutomaticChangesTableID": [
+        "1"
+      ],
+      "KeypadCode": [
+        "0000"
+      ],
+      "AuditOnKeys": [
+        "1"
+      ],
+      "AntipassbackEnabled": [
+        "0"
+      ],
+      "OutwardAntipassback": [
+        "0"
+      ],
+      "UpdateRequired": [
+        "1"
+      ],
+      "BatteryStatus": [
+        "80"
+      ]
+    },
+    {
+      "ExtDoorID": [
+        "654DC954C6D1A6C5548008D4D7F1A71D"
+      ],
+      "Name": [
+        "ORL-166_DC_Fron_Entrance"
+      ],
+      "Description": [
+        "ORL-166_DC_Front_Entrance"
+      ],
+      "GPF1": [
+        ""
+      ],
+      "GPF2": [
+        ""
+      ],
+      "OpenTime": [
+        "6"
+      ],
+      "OpenTimeADA": [
+        "10"
+      ],
+      "OpeningMode": [
+        "8"
+      ],
+      "TimedPeriodsTableID": [
+        "1"
+      ],
+      "AutomaticChangesTableID": [
+        "1"
+      ],
+      "KeypadCode": [
+        "0000"
+      ],
+      "AuditOnKeys": [
+        "0"
+      ],
+      "AntipassbackEnabled": [
+        "0"
+      ],
+      "OutwardAntipassback": [
+        "0"
+      ],
+      "UpdateRequired": [
+        "1"
+      ],
+      "BatteryStatus": [
+        "-1"
+      ]
+    },
+    {
+      "ExtDoorID": [
+        "69983A81922BC8C1FF8008D4D405FBD8"
+      ],
+      "Name": [
+        "ORL-178-Warehouse #1 Cor"
+      ],
+      "Description": [
+        "ORL-178-Warehouse #1 Cor"
+      ],
+      "GPF1": [
+        ""
+      ],
+      "GPF2": [
+        ""
+      ],
+      "OpenTime": [
+        "6"
+      ],
+      "OpenTimeADA": [
+        "20"
+      ],
+      "OpeningMode": [
+        "0"
+      ],
+      "TimedPeriodsTableID": [
+        "1"
+      ],
+      "AutomaticChangesTableID": [
+        "1"
+      ],
+      "KeypadCode": [
+        "0000"
+      ],
+      "AuditOnKeys": [
+        "1"
+      ],
+      "AntipassbackEnabled": [
+        "0"
+      ],
+      "OutwardAntipassback": [
+        "0"
+      ],
+      "UpdateRequired": [
+        "1"
+      ],
+      "BatteryStatus": [
+        "-1"
+      ]
+    },
+    {
+      "ExtDoorID": [
+        "73C5B333DF520FCD6B0008D50B2DACB0"
+      ],
+      "Name": [
+        "ORL-112-RMI Exterior Ent"
+      ],
+      "Description": [
+        "ORL-112-RMI Exterior Ent"
+      ],
+      "GPF1": [
+        ""
+      ],
+      "GPF2": [
+        ""
+      ],
+      "OpenTime": [
+        "6"
+      ],
+      "OpenTimeADA": [
+        "20"
+      ],
+      "OpeningMode": [
+        "0"
+      ],
+      "TimedPeriodsTableID": [
+        "1"
+      ],
+      "AutomaticChangesTableID": [
+        "1"
+      ],
+      "KeypadCode": [
+        "0000"
+      ],
+      "AuditOnKeys": [
+        "0"
+      ],
+      "AntipassbackEnabled": [
+        "0"
+      ],
+      "OutwardAntipassback": [
+        "0"
+      ],
+      "UpdateRequired": [
+        "1"
+      ],
+      "BatteryStatus": [
+        "-1"
+      ]
+    },
+    {
+      "ExtDoorID": [
+        "767B826A2EBFF4C9C78008D50B17C90D"
+      ],
+      "Name": [
+        "ORL-112-RMI Interior Dr"
+      ],
+      "Description": [
+        "ORL-112-RMI Interior Dr"
+      ],
+      "GPF1": [
+        ""
+      ],
+      "GPF2": [
+        ""
+      ],
+      "OpenTime": [
+        "6"
+      ],
+      "OpenTimeADA": [
+        "20"
+      ],
+      "OpeningMode": [
+        "0"
+      ],
+      "TimedPeriodsTableID": [
+        "1"
+      ],
+      "AutomaticChangesTableID": [
+        "1"
+      ],
+      "KeypadCode": [
+        "0000"
+      ],
+      "AuditOnKeys": [
+        "1"
+      ],
+      "AntipassbackEnabled": [
+        "0"
+      ],
+      "OutwardAntipassback": [
+        "0"
+      ],
+      "UpdateRequired": [
+        "1"
+      ],
+      "BatteryStatus": [
+        "80"
+      ]
+    },
+    {
+      "ExtDoorID": [
+        "7804526EBEBF50C2550008D50FFCA80E"
+      ],
+      "Name": [
+        "ORL-157-NOC Hallway"
+      ],
+      "Description": [
+        "ORL-157-NOC Hallway"
+      ],
+      "GPF1": [
+        ""
+      ],
+      "GPF2": [
+        ""
+      ],
+      "OpenTime": [
+        "6"
+      ],
+      "OpenTimeADA": [
+        "20"
+      ],
+      "OpeningMode": [
+        "0"
+      ],
+      "TimedPeriodsTableID": [
+        "1"
+      ],
+      "AutomaticChangesTableID": [
+        "1"
+      ],
+      "KeypadCode": [
+        "0000"
+      ],
+      "AuditOnKeys": [
+        "1"
+      ],
+      "AntipassbackEnabled": [
+        "0"
+      ],
+      "OutwardAntipassback": [
+        "0"
+      ],
+      "UpdateRequired": [
+        "1"
+      ],
+      "BatteryStatus": [
+        "80"
+      ]
+    },
+    {
+      "ExtDoorID": [
+        "78A4C4E4527CC9C67E8008D49D1091AA"
+      ],
+      "Name": [
+        "ORL-180-Cncpt Ctr Side"
+      ],
+      "Description": [
+        "ORL-180-Cncpt Ctr Side"
+      ],
+      "GPF1": [
+        ""
+      ],
+      "GPF2": [
+        ""
+      ],
+      "OpenTime": [
+        "6"
+      ],
+      "OpenTimeADA": [
+        "20"
+      ],
+      "OpeningMode": [
+        "0"
+      ],
+      "TimedPeriodsTableID": [
+        "1"
+      ],
+      "AutomaticChangesTableID": [
+        "1"
+      ],
+      "KeypadCode": [
+        "0000"
+      ],
+      "AuditOnKeys": [
+        "1"
+      ],
+      "AntipassbackEnabled": [
+        "0"
+      ],
+      "OutwardAntipassback": [
+        "0"
+      ],
+      "UpdateRequired": [
+        "1"
+      ],
+      "BatteryStatus": [
+        "80"
+      ]
+    },
+    {
+      "ExtDoorID": [
+        "809846AD6BA46FCAD68008D5AC491165"
+      ],
+      "Name": [
+        "ORL-148-Camilo Office"
+      ],
+      "Description": [
+        "ORL-148-Camilo Office"
+      ],
+      "GPF1": [
+        ""
+      ],
+      "GPF2": [
+        ""
+      ],
+      "OpenTime": [
+        "6"
+      ],
+      "OpenTimeADA": [
+        "20"
+      ],
+      "OpeningMode": [
+        "1"
+      ],
+      "TimedPeriodsTableID": [
+        "1"
+      ],
+      "AutomaticChangesTableID": [
+        "1"
+      ],
+      "KeypadCode": [
+        "0000"
+      ],
+      "AuditOnKeys": [
+        "1"
+      ],
+      "AntipassbackEnabled": [
+        "0"
+      ],
+      "OutwardAntipassback": [
+        "0"
+      ],
+      "UpdateRequired": [
+        "1"
+      ],
+      "BatteryStatus": [
+        "80"
+      ]
+    },
+    {
+      "ExtDoorID": [
+        "9276BF3CF43A20C5650008D574556C1B"
+      ],
+      "Name": [
+        "ORL-Main Lobby Entrance"
+      ],
+      "Description": [
+        ""
+      ],
+      "GPF1": [
+        ""
+      ],
+      "GPF2": [
+        ""
+      ],
+      "OpenTime": [
+        "6"
+      ],
+      "OpenTimeADA": [
+        "20"
+      ],
+      "OpeningMode": [
+        "3"
+      ],
+      "TimedPeriodsTableID": [
+        "4"
+      ],
+      "AutomaticChangesTableID": [
+        "1"
+      ],
+      "KeypadCode": [
+        "0000"
+      ],
+      "AuditOnKeys": [
+        "0"
+      ],
+      "AntipassbackEnabled": [
+        "0"
+      ],
+      "OutwardAntipassback": [
+        "0"
+      ],
+      "UpdateRequired": [
+        "1"
+      ],
+      "BatteryStatus": [
+        "-1"
+      ]
+    },
+    {
+      "ExtDoorID": [
+        "9AEE515EFB5DCBC2C30008D4FF4F1E86"
+      ],
+      "Name": [
+        "ORL-2nd Flr Closet"
+      ],
+      "Description": [
+        "ORL-2nd Floor Closet"
+      ],
+      "GPF1": [
+        ""
+      ],
+      "GPF2": [
+        ""
+      ],
+      "OpenTime": [
+        "6"
+      ],
+      "OpenTimeADA": [
+        "20"
+      ],
+      "OpeningMode": [
+        "2"
+      ],
+      "TimedPeriodsTableID": [
+        "2"
+      ],
+      "AutomaticChangesTableID": [
+        "1"
+      ],
+      "KeypadCode": [
+        "0000"
+      ],
+      "AuditOnKeys": [
+        "1"
+      ],
+      "AntipassbackEnabled": [
+        "0"
+      ],
+      "OutwardAntipassback": [
+        "0"
+      ],
+      "UpdateRequired": [
+        "1"
+      ],
+      "BatteryStatus": [
+        "80"
+      ]
+    },
+    {
+      "ExtDoorID": [
+        "9B957F08EAB53BCB8F0008D4D406A84D"
+      ],
+      "Name": [
+        "ORL-166-DC_Back_Entrance"
+      ],
+      "Description": [
+        "ORL-166_DC_Rear_Entrance"
+      ],
+      "GPF1": [
+        ""
+      ],
+      "GPF2": [
+        ""
+      ],
+      "OpenTime": [
+        "6"
+      ],
+      "OpenTimeADA": [
+        "20"
+      ],
+      "OpeningMode": [
+        "8"
+      ],
+      "TimedPeriodsTableID": [
+        "1"
+      ],
+      "AutomaticChangesTableID": [
+        "1"
+      ],
+      "KeypadCode": [
+        "8251"
+      ],
+      "AuditOnKeys": [
+        "1"
+      ],
+      "AntipassbackEnabled": [
+        "0"
+      ],
+      "OutwardAntipassback": [
+        "0"
+      ],
+      "UpdateRequired": [
+        "1"
+      ],
+      "BatteryStatus": [
+        "80"
+      ]
+    },
+    {
+      "ExtDoorID": [
+        "9DDA46A86EAC13C1820008D4D4077848"
+      ],
+      "Name": [
+        "ORL-179A-RF 48\" Door"
+      ],
+      "Description": [
+        "ORL-179A-RF 48\" Door"
+      ],
+      "GPF1": [
+        ""
+      ],
+      "GPF2": [
+        ""
+      ],
+      "OpenTime": [
+        "6"
+      ],
+      "OpenTimeADA": [
+        "20"
+      ],
+      "OpeningMode": [
+        "1"
+      ],
+      "TimedPeriodsTableID": [
+        "1"
+      ],
+      "AutomaticChangesTableID": [
+        "1"
+      ],
+      "KeypadCode": [
+        "0000"
+      ],
+      "AuditOnKeys": [
+        "1"
+      ],
+      "AntipassbackEnabled": [
+        "0"
+      ],
+      "OutwardAntipassback": [
+        "0"
+      ],
+      "UpdateRequired": [
+        "1"
+      ],
+      "BatteryStatus": [
+        "80"
+      ]
+    },
+    {
+      "ExtDoorID": [
+        "9F7C235EA36E4DCAE80008D4DFD1B6A0"
+      ],
+      "Name": [
+        "ORL-152-Emp Frt Entrance"
+      ],
+      "Description": [
+        "ORL-152-Emp Frt Entrance"
+      ],
+      "GPF1": [
+        ""
+      ],
+      "GPF2": [
+        ""
+      ],
+      "OpenTime": [
+        "6"
+      ],
+      "OpenTimeADA": [
+        "20"
+      ],
+      "OpeningMode": [
+        "0"
+      ],
+      "TimedPeriodsTableID": [
+        "1"
+      ],
+      "AutomaticChangesTableID": [
+        "1"
+      ],
+      "KeypadCode": [
+        "0000"
+      ],
+      "AuditOnKeys": [
+        "0"
+      ],
+      "AntipassbackEnabled": [
+        "0"
+      ],
+      "OutwardAntipassback": [
+        "0"
+      ],
+      "UpdateRequired": [
+        "1"
+      ],
+      "BatteryStatus": [
+        "80"
+      ]
+    },
+    {
+      "ExtDoorID": [
+        "ABA22EB31F31C7CDBE0008D4D4078E6F"
+      ],
+      "Name": [
+        "ORL-179B-RF 42\"Door"
+      ],
+      "Description": [
+        "ORL-179B-RF 42\"Door"
+      ],
+      "GPF1": [
+        ""
+      ],
+      "GPF2": [
+        ""
+      ],
+      "OpenTime": [
+        "6"
+      ],
+      "OpenTimeADA": [
+        "20"
+      ],
+      "OpeningMode": [
+        "0"
+      ],
+      "TimedPeriodsTableID": [
+        "1"
+      ],
+      "AutomaticChangesTableID": [
+        "1"
+      ],
+      "KeypadCode": [
+        "0000"
+      ],
+      "AuditOnKeys": [
+        "1"
+      ],
+      "AntipassbackEnabled": [
+        "0"
+      ],
+      "OutwardAntipassback": [
+        "0"
+      ],
+      "UpdateRequired": [
+        "1"
+      ],
+      "BatteryStatus": [
+        "80"
+      ]
+    },
+    {
+      "ExtDoorID": [
+        "B92C2E43812C9FCC7A8008D4D4061B6E"
+      ],
+      "Name": [
+        "ORL-178-Warehouse #2 Cor"
+      ],
+      "Description": [
+        "ORL-178-Warehouse #2 Corserva"
+      ],
+      "GPF1": [
+        ""
+      ],
+      "GPF2": [
+        ""
+      ],
+      "OpenTime": [
+        "6"
+      ],
+      "OpenTimeADA": [
+        "20"
+      ],
+      "OpeningMode": [
+        "0"
+      ],
+      "TimedPeriodsTableID": [
+        "1"
+      ],
+      "AutomaticChangesTableID": [
+        "1"
+      ],
+      "KeypadCode": [
+        "0000"
+      ],
+      "AuditOnKeys": [
+        "1"
+      ],
+      "AntipassbackEnabled": [
+        "0"
+      ],
+      "OutwardAntipassback": [
+        "0"
+      ],
+      "UpdateRequired": [
+        "1"
+      ],
+      "BatteryStatus": [
+        "-1"
+      ]
+    },
+    {
+      "ExtDoorID": [
+        "BFBB5C130EC6C1CD270008D4D4434293"
+      ],
+      "Name": [
+        "ORL-117-Warehouse_Lunch"
+      ],
+      "Description": [
+        "ORL-117-Warehouse_Lunch"
+      ],
+      "GPF1": [
+        ""
+      ],
+      "GPF2": [
+        ""
+      ],
+      "OpenTime": [
+        "6"
+      ],
+      "OpenTimeADA": [
+        "20"
+      ],
+      "OpeningMode": [
+        "0"
+      ],
+      "TimedPeriodsTableID": [
+        "1"
+      ],
+      "AutomaticChangesTableID": [
+        "1"
+      ],
+      "KeypadCode": [
+        "0000"
+      ],
+      "AuditOnKeys": [
+        "1"
+      ],
+      "AntipassbackEnabled": [
+        "0"
+      ],
+      "OutwardAntipassback": [
+        "0"
+      ],
+      "UpdateRequired": [
+        "1"
+      ],
+      "BatteryStatus": [
+        "80"
+      ]
+    },
+    {
+      "ExtDoorID": [
+        "D1519B6361A22BCF188008D47C37102F"
+      ],
+      "Name": [
+        "ORL-178-Warehouse to Con"
+      ],
+      "Description": [
+        "ORL-178-Warehouse to Concept Center Back"
+      ],
+      "GPF1": [
+        ""
+      ],
+      "GPF2": [
+        ""
+      ],
+      "OpenTime": [
+        "6"
+      ],
+      "OpenTimeADA": [
+        "20"
+      ],
+      "OpeningMode": [
+        "0"
+      ],
+      "TimedPeriodsTableID": [
+        "1"
+      ],
+      "AutomaticChangesTableID": [
+        "1"
+      ],
+      "KeypadCode": [
+        "0000"
+      ],
+      "AuditOnKeys": [
+        "1"
+      ],
+      "AntipassbackEnabled": [
+        "0"
+      ],
+      "OutwardAntipassback": [
+        "0"
+      ],
+      "UpdateRequired": [
+        "1"
+      ],
+      "BatteryStatus": [
+        "80"
+      ]
+    },
+    {
+      "ExtDoorID": [
+        "DF01370D62E10DC9F98008D45058997A"
+      ],
+      "Name": [
+        "ORL-178-Elevator to 2FL"
+      ],
+      "Description": [
+        "ORL-178-Elevator to 2FL"
+      ],
+      "GPF1": [
+        ""
+      ],
+      "GPF2": [
+        ""
+      ],
+      "OpenTime": [
+        "6"
+      ],
+      "OpenTimeADA": [
+        "20"
+      ],
+      "OpeningMode": [
+        "0"
+      ],
+      "TimedPeriodsTableID": [
+        "1"
+      ],
+      "AutomaticChangesTableID": [
+        "1"
+      ],
+      "KeypadCode": [
+        "0000"
+      ],
+      "AuditOnKeys": [
+        "1"
+      ],
+      "AntipassbackEnabled": [
+        "0"
+      ],
+      "OutwardAntipassback": [
+        "0"
+      ],
+      "UpdateRequired": [
+        "1"
+      ],
+      "BatteryStatus": [
+        "80"
+      ]
+    },
+    {
+      "ExtDoorID": [
+        "E6ABE3C7D83D8CC0150008D4D40733A7"
+      ],
+      "Name": [
+        "ORL-157-Hall to FSMSDC"
+      ],
+      "Description": [
+        "ORL-157-Hallway to FSMSDC"
+      ],
+      "GPF1": [
+        ""
+      ],
+      "GPF2": [
+        ""
+      ],
+      "OpenTime": [
+        "6"
+      ],
+      "OpenTimeADA": [
+        "20"
+      ],
+      "OpeningMode": [
+        "0"
+      ],
+      "TimedPeriodsTableID": [
+        "1"
+      ],
+      "AutomaticChangesTableID": [
+        "1"
+      ],
+      "KeypadCode": [
+        "0000"
+      ],
+      "AuditOnKeys": [
+        "1"
+      ],
+      "AntipassbackEnabled": [
+        "0"
+      ],
+      "OutwardAntipassback": [
+        "0"
+      ],
+      "UpdateRequired": [
+        "1"
+      ],
+      "BatteryStatus": [
+        "80"
+      ]
+    },
+    {
+      "ExtDoorID": [
+        "E9BA40ADF7DB5ECC128008D4D40635DC"
+      ],
+      "Name": [
+        "ORL-194-Warehouse #3 DIS"
+      ],
+      "Description": [
+        "ORL-194-Warehouse #3 DIS"
+      ],
+      "GPF1": [
+        ""
+      ],
+      "GPF2": [
+        ""
+      ],
+      "OpenTime": [
+        "6"
+      ],
+      "OpenTimeADA": [
+        "20"
+      ],
+      "OpeningMode": [
+        "0"
+      ],
+      "TimedPeriodsTableID": [
+        "1"
+      ],
+      "AutomaticChangesTableID": [
+        "1"
+      ],
+      "KeypadCode": [
+        "0000"
+      ],
+      "AuditOnKeys": [
+        "1"
+      ],
+      "AntipassbackEnabled": [
+        "0"
+      ],
+      "OutwardAntipassback": [
+        "0"
+      ],
+      "UpdateRequired": [
+        "1"
+      ],
+      "BatteryStatus": [
+        "-1"
+      ]
+    },
+    {
+      "ExtDoorID": [
+        "F138E9885E41CACB628008D56E498121"
+      ],
+      "Name": [
+        "ORL-Collider EXT Ent Dr"
+      ],
+      "Description": [
+        "Collider EXT Ent Dr"
+      ],
+      "GPF1": [
+        ""
+      ],
+      "GPF2": [
+        ""
+      ],
+      "OpenTime": [
+        "6"
+      ],
+      "OpenTimeADA": [
+        "20"
+      ],
+      "OpeningMode": [
+        "0"
+      ],
+      "TimedPeriodsTableID": [
+        "1"
+      ],
+      "AutomaticChangesTableID": [
+        "1"
+      ],
+      "KeypadCode": [
+        "0000"
+      ],
+      "AuditOnKeys": [
+        "0"
+      ],
+      "AntipassbackEnabled": [
+        "0"
+      ],
+      "OutwardAntipassback": [
+        "0"
+      ],
+      "UpdateRequired": [
+        "1"
+      ],
+      "BatteryStatus": [
+        "-1"
+      ]
+    },
+    {
+      "ExtDoorID": [
+        "F4E47ADD663558CE0B8008D4D514182D"
+      ],
+      "Name": [
+        "ORL-Padlock for Gate"
+      ],
+      "Description": [
+        "ORL - Padlock for Gate"
+      ],
+      "GPF1": [
+        ""
+      ],
+      "GPF2": [
+        ""
+      ],
+      "OpenTime": [
+        "6"
+      ],
+      "OpenTimeADA": [
+        "20"
+      ],
+      "OpeningMode": [
+        "0"
+      ],
+      "TimedPeriodsTableID": [
+        "1"
+      ],
+      "AutomaticChangesTableID": [
+        "1"
+      ],
+      "KeypadCode": [
+        "0000"
+      ],
+      "AuditOnKeys": [
+        "1"
+      ],
+      "AntipassbackEnabled": [
+        "0"
+      ],
+      "OutwardAntipassback": [
+        "0"
+      ],
+      "UpdateRequired": [
+        "1"
+      ],
+      "BatteryStatus": [
+        "80"
+      ]
+    },
+    {
+      "ExtDoorID": [
+        "F5D1A8DD0FB072C2850008D4FF4F3BC1"
+      ],
+      "Name": [
+        "ORL-2nd Flr Fitness Ct"
+      ],
+      "Description": [
+        "ORL-2nd Floor Fitness Ct"
+      ],
+      "GPF1": [
+        ""
+      ],
+      "GPF2": [
+        ""
+      ],
+      "OpenTime": [
+        "6"
+      ],
+      "OpenTimeADA": [
+        "20"
+      ],
+      "OpeningMode": [
+        "2"
+      ],
+      "TimedPeriodsTableID": [
+        "2"
+      ],
+      "AutomaticChangesTableID": [
+        "1"
+      ],
+      "KeypadCode": [
+        "0000"
+      ],
+      "AuditOnKeys": [
+        "1"
+      ],
+      "AntipassbackEnabled": [
+        "0"
+      ],
+      "OutwardAntipassback": [
+        "0"
+      ],
+      "UpdateRequired": [
+        "1"
+      ],
+      "BatteryStatus": [
+        "80"
+      ]
+    },
+    {
+      "ExtDoorID": [
+        "F633FDABFDC443C33E8008D4DFD1D1E8"
+      ],
+      "Name": [
+        "ORL-168-Emp Side Entranc"
+      ],
+      "Description": [
+        "ORL-168-Emp Side Entranc"
+      ],
+      "GPF1": [
+        ""
+      ],
+      "GPF2": [
+        ""
+      ],
+      "OpenTime": [
+        "6"
+      ],
+      "OpenTimeADA": [
+        "20"
+      ],
+      "OpeningMode": [
+        "0"
+      ],
+      "TimedPeriodsTableID": [
+        "1"
+      ],
+      "AutomaticChangesTableID": [
+        "1"
+      ],
+      "KeypadCode": [
+        "0000"
+      ],
+      "AuditOnKeys": [
+        "0"
+      ],
+      "AntipassbackEnabled": [
+        "0"
+      ],
+      "OutwardAntipassback": [
+        "0"
+      ],
+      "UpdateRequired": [
+        "1"
+      ],
+      "BatteryStatus": [
+        "80"
+      ]
+    },
+    {
+      "ExtDoorID": [
+        "FA57BBB8208C03C0100008D4D444414A"
+      ],
+      "Name": [
+        "ORL-100-Lobby to Hall"
+      ],
+      "Description": [
+        "ORL-100-Lobby to Hallway"
+      ],
+      "GPF1": [
+        ""
+      ],
+      "GPF2": [
+        ""
+      ],
+      "OpenTime": [
+        "6"
+      ],
+      "OpenTimeADA": [
+        "20"
+      ],
+      "OpeningMode": [
+        "0"
+      ],
+      "TimedPeriodsTableID": [
+        "1"
+      ],
+      "AutomaticChangesTableID": [
+        "1"
+      ],
+      "KeypadCode": [
+        "0000"
+      ],
+      "AuditOnKeys": [
+        "1"
+      ],
+      "AntipassbackEnabled": [
+        "0"
+      ],
+      "OutwardAntipassback": [
+        "0"
+      ],
+      "UpdateRequired": [
+        "1"
+      ],
+      "BatteryStatus": [
+        "80"
+      ]
+    }
+  ]
